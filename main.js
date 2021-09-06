@@ -1244,14 +1244,15 @@ btncloselyric.onclick = () => {
 // âm thanh
 function setvolume () {
     audio.volume = propressVolumne.value / 100;
-    // volumehigh.classList.add('active5');
-    // volumemute.classList.remove('active5');
+    
 }
-propressVolumne.addEventListener('mousemove' , setvolume)
+if(window.screen > 739 + 'px'){
+    propressVolumne.addEventListener('change' , setvolume)
+}
 function activeVolume () {
     propressVolumne.classList.toggle('active')
 }
-iconVolume.addEventListener('mousedown' ,activeVolume)
+iconVolume.addEventListener('click' ,activeVolume)
 // thời gian song
 function settimeupdate () {
     if (audio.duration) {
