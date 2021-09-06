@@ -1,0 +1,100 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* =============BIẾN CSS============ */
+:root{
+    /* chiều cao header */
+    --header-height:3rem;
+
+    /* font weight */
+    --font-1:500;
+    --font-2:600;
+    --font-3:700;
+
+    /* color */
+    --dark-color:#141414;
+    --dark-color-light:#8a8a8a;
+    --dark-color-lighten:#f2f2f2;
+    --white-color:#fff;
+    
+    /* font family - font size */
+    --body-font:'Poppins', sans-serif;
+    --font-size-m:1.5rem;
+    --font-size-l:2rem;
+    --font-size-xl:3rem;
+    --font-size-s:1rem;
+    --font-size-xs:0.875rem;
+
+    /* margin */
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /* z index */
+    --z-fixed:100;
+
+    /* rotate img */
+    --rotate-img:rotate(-30deg);
+
+}
+
+/* ====base==== */
+*,::before,::after{
+    box-sizing: border-box;
+}
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--font-size-s) ;
+    color: var(--dark-color);
+    line-height: 1.6rem;
+}
+h1,h2,h3,p,ul{
+    margin: 0;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* class css */
+.section{
+    margin: 5rem 0 0 0;
+}
+.section-title{
+    position: relative;
+    font-size: var(--font-size-l);
+    margin-bottom: var(--mb-4);
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+.section-title::after{
+    content: '';
+    position: absolute;
+    width: 56px;
+    height: 0.18rem;
+    top: -1rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: var(--dark-color);
+}
