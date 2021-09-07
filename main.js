@@ -269,8 +269,8 @@ var songlist = [
     {
         songimg : 'image/1061332173675372452476431818456362453126714o-1593780823287457624164-crop-1593780866985947628599.jpg',
         songouther : 'Sơn Tùng MTP',
-        songname : 'Có Chăc Yêu Là Đây',
-        songlink : 'list_song/SƠN TÙNG M-TP - CÓ CHẮC YÊU LÀ ĐÂY - OFFICIAL MUSIC VIDEO.mp3',
+        songname : 'Có Chắc Yêu Là Đây',
+        songlink : 'list_song/SƠN TÙNG M-TP _ CÓ CHẮC YÊU LÀ ĐÂY _ OFFICIAL MUSIC VIDEO.mp3',
         lyric : `
         [Verse 1]
         Thấp thoáng ánh mắt đôi môi mang theo hương mê say<br/>
@@ -589,6 +589,373 @@ var songlist = [
         Hãy trao cho anh thứ anh đang mong chờ`
     },
     {
+        songimg : 'image/artworks-gjuwJety5q5z8W9x-uK95Lw-t500x500.jpg',
+        songouther : 'WREN EVANS',
+        songname : 'Thích Em Hơi Nhiều',
+        songlink : 'list_song/WREN EVANS - THÍCH EM HƠI NHIỀU (OFFICIAL MUSIC VIDEO).mp3',
+        lyric : `Biết là mình thích nhau<br/>
+
+        Còn chuyện xa hơn thôi để tính sau<br/>
+        
+        Vờn nhau thôi không đúng đâu<br/>
+        
+        Dân chơi thì chơi là phải trúng<br/>
+        
+        Còn anh chỉ muốn chậm thôi, không cần quá liều<br/>
+        
+        Oh anh chưa muốn đâm đầu vậy đâu<br/>
+        
+        Anh chưa thiết tha nghĩ tới chuyện sau này<br/>
+        
+        Dù ba mẹ chờ mong, em biết không?<br/>
+        
+        Họ muốn có cháu bồng<br/>
+        
+        Chỉ cần ngồi với em chút thôi, được không?<br/>
+        
+        Nhìn vào đôi mắt em Thấy sao?<br/>
+        
+        Một thế giới màu hồng<br/>
+        
+        Dù môi đang cách nhau, cách nhau, một chút<br/>
+        
+        Nhưng mà vì anh chưa muốn phiêu, muốn phiêu<br/>
+        
+        Dù thích em hơi nhiều<br/>
+        
+        "Alo"<br/>
+        
+        "Baby anh đang đâu thế ?"<br/>
+        
+        Anh ngồi Xofa ở Tống Duy Tân, Ngay cạnh Puku, oke ?<br/>
+        
+        Với mấy đồng bọn nó rủ rê<br/>
+        
+        Qua nhà thằng Minh Khai không thật<br/>
+        
+        Cơ mà có hẹn với em anh bảo tối nay tao đi sinh nhật, thế nhá<br/>
+        
+        Nói thật anh đang bối rối khi nghĩ về ai<br/>
+        
+        Công việc dang dở chắc anh, phải chia ông Hiếu làm Hai<br/>
+        
+        Thích em hơi nhiều nên anh phải nghĩ sao nó vừa tai<br/><br/>
+        
+        
+         
+        Tại vì most of the time Em ở trong tâm trí anh hết thời gian<br/>
+        
+        Chỉ cần ngồi với em chút thôi, được không?<br/>
+        
+        Nhìn vào đôi mắt em Thấy sao?<br/>
+        
+        Một thế giới màu hồng<br/>
+        
+        Dù môi đang cách nhau, cách nhau, một chút<br/>
+        
+        Nhưng mà vì anh chưa muốn phiêu, muốn phiêu<br/>
+        
+        Dù thích em hơi nhiều<br/>
+        
+        Baby anh muốn thấy em trong tương lai gần`
+    },
+    {
+        songimg : 'image/ab67616d0000b2734be34a1e036c97d22b5392d5.jpg',
+        songouther : 'Thịnh Suy',
+        songname : 'Chuyện Rằng',
+        songlink : 'list_song/CHUYỆN RẰNG.mp3',
+        lyric : `Khi đêm ùa vào ôm chặt em<br/>
+        Oh, I'm just a boy<br/>
+        Chẳng thể là quá muộn khi nói lời yêu một người<br/>
+        Chẳng thể là quá muộn khi ta hoài tiếc một đời<br/>
+        Những lời yêu sao quá khó khăn<br/>
+        Kìa những tháng năm dài ta đã cùng đi bên nhau<br/>
+        Nhìn đóa môi em cười cho ta một vết thương sâu<br/>
+        Những lời yêu sao quá khó khăn<br/>
+        Chuyện rằng huh huh-huh-huh-huhh mơ màng<br/>
+        Anh giam yêu dấu trong anh từng phút yên lặng<br/>
+        Là từng câu hát "anh yêu em"<br/>
+        Viết ra không tên<br/>
+        Khi đêm đen về<br/>
+        Chuyện rằng năm tháng cứ trôi chẳng thấy, quay lại<br/>
+        Tại sao anh vẫn đau khi nhìn thấy, em bên ai<br/>
+        Liệu rằng câu hát "anh yêu em"<br/>
+        Sẽ đến bên em?<br/>
+        Khi đêm ùa vào ôm chặt em<br/>
+        Oh, I'm just a boy<br/>
+        Tìm thấy nhau cả rồi nhưng trong lòng vẫn chơi vơi<br/>
+        Thả tiếng yêu không lời trôi theo ngọn gió muôn nơi<br/>
+        Những lời yêu sao quá khó khăn<br/>
+        Chuyện rằng huh-huh-huh-huh-huh mơ màng<br/>
+        Anh giam yêu dấu trong anh từng phút yên lặng<br/>
+        Là từng câu hát "anh yêu em"<br/>
+        Viết ra không tên<br/>
+        Khi đêm đen về<br/>
+        Chuyện rằng năm tháng cứ trôi chẳng thấy, quay lại<br/>
+        Tại sao anh vẫn đau khi nhìn thấy, em bên ai<br/>
+        Liệu rằng câu hát "anh yêu em"<br/>
+        Sẽ đến bên em?<br/>
+        Khi đêm ùa vào ôm chặt em<br/>
+        Ngập ngừng lời yêu, la la love<br/>
+        Có phải quá trễ để trao về em không, la la love<br/>
+        Có phải tiếng khóc cô đơn vì em, la la love<br/>
+        Đã đến lúc hát lên câu ca này<br/>
+        Ngập ngừng lời yêu, la la love<br/>
+        Chẳng thể quá trễ để trao về em đâu, la la love<br/>
+        Chẳng còn tiếng khóc cô đơn vì em, la la love<br/>
+        Đã đến lúc hát lên câu ca này<br/>
+        Chuyện rằng huh-huh-huh-huh-huhh mơ màng<br/>
+        Anh trao yêu dấu trong anh từng phút yên bình<br/>
+        Để từng câu hát "anh yêu em"<br/>
+        Sẽ đến bên em<br/>
+        Khi đêm đen về<br/>
+        Chuyện rằng năm tháng cứ trôi chẳng thấy, quay lại<br/>
+        Và chẳng hối tiếc khi có nhìn thấy em bên ai<br/>
+        Để từng câu hát "anh yêu em"<br/>
+        Sẽ đến bên em<br/>
+        Khi đêm ùa vào ôm chặt em<br/>
+        Oh, I'm just a boy`
+    },
+    {
+        songimg : 'image/1574233414436_640.jpg',
+        songouther : 'Trọng Hiếu',
+        songname : 'Em Là Bà Nội Của Anh',
+        songlink : 'list_song/Em-La-Ba-Noi-Cua-Anh-Trong-Hieu.mp3',
+        lyric : `Vợ ơi You knock me out<br/>
+        Vợ ơi You knock me out<br/>
+        You let me down<br/><br/>
+        
+        Xinh chưa Baby em hãy nghe bài hát<br/>
+        Anh viết cho em<br/>
+        Bằng những lời ca từ trái tim<br/>
+        Ây dô, Ây dô<br/>
+        Hãy lắng nghe một chút thôi, một chút thôi<br/>
+        Xinh chưa Chưa một giây nào anh để quên<br/>
+        Hạnh phúc cho anh chỉ riêng mình em, mình em<br/>
+        Ây dô, Ây dô<br/>
+        You can say no, no, no no no<br/><br/>
+        
+        Lỡ hôm nay trời nắng to<br/>
+        Chỉ cần em muốn xem mưa đừng có lo<br/>
+        Và nếu đêm khuya nhiều lắng lo<br/>
+        Anh sẽ kéo mặt trời lên cho<br/>
+        Xinh chưa<br/><br/>
+        
+        Anh yêu em đến điên đầu<br/>
+        Mà anh lại thấy như thế nó rất ngầu<br/>
+        Dù là anh giờ đây phải hóa thành bé con<br/>
+        Anh vẫn chỉ yêu bà nội của anh thôi<br/>
+        Xinh chưa<br/>
+        Anh yêu em đến điên đầu<br/>
+        Mà anh chẳng muốn thấy em phải âu sầu<br/>
+        Nàng là mây là mưa là sao là gió bay<br/>
+        Okey em, em là bà nội của anh<br/>
+        Em là bà nội của anh<br/>
+        Bà nội bà nội của anh<br/>
+        <br/>
+        Yêu anh không lo<br/>
+        Chỉ cần ăn no dù có tròn vo<br/>
+        Thì anh chẳng hề đắn đo<br/>
+        Buồn buồn thì hét thật to<br/>
+        Lỡ mà có đau họng rồi ho<br/>
+        Thì cũng đã có anh lo<br/>
+        Anh bay ra đường mua thuốc về ngay cho<br/>
+        Em yêu anh không nà<br/>
+        Tin anh đi em ah<br/>
+        Anh chỉ yêu ai thương ai tin ai<br/>
+        Như khi bên em đâu nà<br/>
+        Khà khà khà khà khà khà<br/>
+        <br/>
+        Anh luôn mong sao ta yêu nhau<br/>
+        Luôn bên nhau cho tới khi ta chung nhà`
+    },
+    {
+        songimg : 'image/6159907218426491106_mq.jpg',
+        songouther : 'Đen',
+        songname : 'Trốn Tìm',
+        songlink : 'list_song/Đen - Trốn Tìm ft. MTV band (M_V).mp3',
+        lyric : `[Chorus: MTV]<br/>
+        Có một cái cây trong một cái vườn<br/>
+        Trên những tán cây nở rộ những đóa hoa<br/>
+        Có hai đứa nhóc đang chơi trốn tìm<br/>
+        Tìm hoài tìm mãi nên quên lối về<br/><br/>
+        
+        [Verse 1: Đen]<br/>
+        Anh đi tìm thì em trốn, anh đi trốn em không tìm<br/>
+        Lòng em không gợn sóng, cuối cùng anh mất công chìm<br/>
+        Nếu mà có cây búa anh sẽ nện cho bõ công<br/>
+        Vì nhớ nhung đặc quánh giờ nó khô thành bê tông<br/>
+        Chúng ta rồi sẽ có, có những chuyến đi dài<br/>
+        Phải tự học lấy mọi thứ vì trong “tình trường” làm biếng ghi bài<br/>
+        Câu chuyện của chúng ta bỗng có thêm một miếng bi hài<br/>
+        Vì cách mà em gọi anh, không có "u" và thiếu "y dài" (Ê)<br/>
+        Phía xa thành phố người ta đã bật đèn đường<br/>
+        Hương xưa quen làm anh thấy thật thèm thuồng<br/>
+        Nỗi buồn vàng rực cứ như là chứa đồng thau<br/>
+        Hệt như là Beckham vậy, em chỉ giỏi cứa lòng nhau<br/>
+        Hé cửa sổ ra mà xem<br/>
+        Có một chàng thi sĩ đứng ở ngay nhà em<br/>
+        Viết nhạc tình mát ngọt tựa như cây cà rem<br/>
+        Anh ta sẽ đứng ở nơi đây cả đêm<br/><br/>
+        
+        [Chorus: MTV, Biên]<br/>
+        Có hai cái cây trong một cái vườn<br/>
+        (Có hai cái cây trong vườn)<br/>
+        Trên những tán cây nở rộ những đóa hoa<br/>
+        (Những đoá hoa trên cành)<br/>
+        Có hai đứa nhóc đang chơi trốn tìm<br/>
+        (Có hai đứa nhóc đang chơi)<br/>
+        Tìm hoài tìm mãi nên quên lối về<br/><br/>
+        
+        [Verse 2: Đen, MTV, Cả hai]<br/>
+        Hồi đó anh rụt rè như đám cây mắc cỡ<br/>
+        Gần em làm anh hồi hộp tới mức gây tắc thở<br/>
+        Ta đều không biết có điều gì sau đám mây sắp nở<br/>
+        Trò chơi trốn tìm ngày đó, sau này đầy trắc trở<br/>
+        Ta săn bắn những khát vọng và hái lượm những giấc mơ<br/>
+        Ta gieo trồng cây ước mộng, thứ mà lấy đi nhiều thì giờ<br/>
+        Ta đào những cái hố mà không biết có ngày bị lọt<br/>
+        Để rất lâu sau này chúng ta cau mày nhận ra không phải tất cả bông hoa thì đều sẽ có những nhuỵ ngọt<br/>
+        Gọi tên em làm anh mất giọng hoài<br/>
+        Hệt như là một giấc mộng dài<br/>
+        Ta đi tìm cả thế giới nhưng mà lại trốn nhau<br/>
+        Biết vậy thà nghỉ chơi từ lúc mới chớm đau<br/>
+        Người đi tìm cái người đi trốn, người đi trốn cái người đi tìm<br/>
+        Tình yêu từ những ngày xưa đã ngủ quên dưới tán cây im lìm<br/>
+        <br/>
+        [Chorus: MTV]<br/>
+        Có 3 cái cây trong một cái vườn<br/>
+        Trên những tán cây nở rộ những đóa hoa<br/>
+        Có hai đứa nhóc đang chơi trốn tìm<br/>
+        Tìm hoài tìm mãi nên quên lối về<br/>
+        <br/>
+        [Bridge: MTV]<br/>
+        Ai đó đã chặt hết cây và cũng chẳng thấy vườn (chẳng thấy cây trong vườn)<br/>
+        Ai đó đã xây một ngôi nhà rất to (chặt hết cây đi rồi)<br/>
+        Chắc em hạnh phúc yên vui với người<br/>
+        (Chắc em hạnh phúc yên vui)<br/>
+        Nhà em có chó anh không dám vào<br/>
+        <br/>
+        [Verse 3: MTV]<br/>
+        Niềm cô đơn của những người trưởng thành<br/>
+        Là khi muốn trốn nhưng không ai tìm<br/>
+        Nhiều khi ta muốn ta được bé lại<br/>
+        Để khi đi trốn có người đi tìm<br/>
+        Nhiều khi ta muốn ta được bé lại<br/>
+        Để khi đi trốn có người đi tìm`
+    },
+    {
+        songimg : 'image/71R0KA284rL._SS500_.jpg',
+        songouther : 'Pink Sweat',
+        songname : 'At My Worst',
+        songlink : 'list_song/Pink Sweat$ - At My Worst (Official Video).mp3',
+        lyric : `[Verse 1]<br/>
+        Can I call you baby? Can you be my friend?<br/>
+        Can you be my lover up until the very end?<br/>
+        Let me show you love, oh, no pretend<br/>
+        Stick by my side even when the world is caving in, yeah<br/><br/>
+        
+        [Pre-Chorus]<br/>
+        Oh, oh, oh, don't, don't you worry<br/>
+        I'll be there whenever you want me<br/><br/>
+        
+        [Chorus]<br/>
+        I need somebody who can love me at my worst<br/>
+        Know I'm not perfect, but I hope you see my worth<br/>
+        'Cause it's only you, nobody new, I put you first<br/>
+        And for you, girl, I swear I'd do the worst<br/><br/>
+        
+        [Post-Chorus]<br/>
+        Ooh, ooh-ooh<br/>
+        Ooh-ooh-ooh, ooh-ooh-ooh-ooh
+        <br/><br/>
+        [Verse 2]<br/>
+        If you stay forever, let me hold your hand<br/>
+        I can fill those places in your heart no one else can<br/>
+        Let me show you love, oh, no pretend, yeah<br/>
+        I'll be right here, baby, you know it's sink or swim<br/>
+        <br/>
+        [Pre-Chorus]<br/>
+        Oh, oh, oh, don't, don't you worry<br/>
+        I'll be there whenever you want me<br/>
+        <br/>
+        [Chorus]<br/>
+        I need somebody who can love me at my worst<br/>
+        Know I'm not perfect, but I hope you see my worth, yeah<br/>
+        'Cause it's only you, nobody new, I put you first (You first)<br/>
+        And for you, girl, I swear I'd do the worst<br/>
+        <br/>
+        [Post-Chorus]<br/>
+        Ooh, ooh-ooh<br/>
+        Ooh-ooh-ooh, ooh-ooh-ooh-ooh<br/>
+        Ooh-ooh-ooh, ooh, ooh-ooh<br/>
+        Ooh-ooh-ooh, ooh-ooh-ooh-ooh<br/>
+        <br/>
+        [Outro]<br/>
+        I need somebody who can love me at my worst<br/>
+        Know I'm not perfect, but I hope you see my worth<br/>
+        'Cause it's only you, nobody new, I put you first<br/>
+        And for you, girl, I swear I'd do the worst`
+    },
+    {
+        songimg : 'image/artworks-000492215712-5puwh8-t500x500.jpg',
+        songouther : 'Jeremy Zucker',
+        songname : 'Comethru',
+        songlink : 'list_song/Jeremy Zucker - comethru (Official Video).mp3',
+        lyric : `[Verse 1]<br/>
+        I might lose my mind<br/>
+        Waking when the sun's down<br/>
+        Riding all these highs<br/>
+        Waiting for the comedown<br/>
+        Walk these streets with me<br/>
+        I'm doing decently<br/>
+        Just glad that I can breathe, yeah<br/><br/>
+        
+        [Pre-Chorus]<br/>
+        I'm trying to realize<br/>
+        It's alright to not be fine on your own<br/><br/>
+        
+        [Chorus]<br/>
+        Now I'm shaking, drinking all this coffee<br/>
+        These last few weeks have been exhausting<br/>
+        I'm lost in my imagination<br/>
+        And there's one thing that I need from you<br/><br/>
+        
+        [Hook]<br/>
+        Can you come through, through<br/>
+        Through, yeah<br/>
+        And there's one thing that I need from you<br/>
+        Can you come through?<br/>
+        <br/>
+        [Verse 2]<br/>
+        Ain't got much to do<br/>
+        Too old for my hometown<br/>
+        Went to bed at noon<br/>
+        Couldn't put my phone down<br/>
+        Scrolling patiently<br/>
+        It's all the same to me<br/>
+        Just faces on a screen, yeah<br/>
+        <br/>
+        [Pre-Chorus]<br/>
+        I'm trying to realize<br/>
+        It's alright to not be fine on your own<br/><br/>
+        
+        [Chorus]<br/>
+        Now I'm shaking, drinking all this coffee<br/>
+        These last few weeks have been exhausting<br/>
+        I'm lost in my imagination<br/>
+        And there's one thing that I need from you<br/>
+        <br/>
+        [Hook]<br/>
+        Can you come through, through<br/>
+        Through, yeah<br/>
+        And there's one thing that I need from you<br/>
+        Can you come through, through<br/>
+        Through, yeah<br/>
+        And there's one thing that I need from you<br/>
+        Can you come through?`
+    },
+    {
         songimg : 'image/ab67616d0000b27341e31d6ea1d493dd77933ee5.jpg',
         songouther : 'TheKidLAROI - JustinBieber',
         songname : 'Stay',
@@ -868,7 +1235,7 @@ var songlist = [
         songimg : 'image/artworks-000606602386-58veao-t500x500.jpg',
         songouther : 'Charlie Puth',
         songname : 'Cheating on You',
-        songlink : 'list_song/Charlie Puth - Cheating on You [Official Video].mp3',
+        songlink : 'list_song/Charlie Puth - Cheating on You [Official Video] (1).mp3',
         lyric : `[Verse 1]
         It started with a kiss<br/>
         On your mama's couch<br/>
@@ -951,7 +1318,6 @@ var play_song = false;
 var i = 0;
 var israndom = false;
 var isrestar = false;
-var isstopweb = false;
 var isVolume = false;
 // in ra danh sách bài hát
 function render () {
@@ -1123,10 +1489,7 @@ restar.onclick = function () {
     isrestar = !isrestar;
     restar.classList.toggle('active', isrestar) ;
     !random;
-    // random.click();     
-    // if(random.click()) {
-    //     restar.click();
-    // }
+    
 }
 
 // khi kết thúc bài - tự động next
@@ -1210,17 +1573,7 @@ listsongson.onclick = function (e) {
 
     }
 }
-// 
-// stopweb.onclick = function () {
-//     isstopweb = !isstopweb;
-//     stopweb.classList.toggle('active3', isstopweb);
-//     if(!isstopweb){
-//         audio.play();
-//     }
-//     else{
-//         audio.pause();
-//     }
-// }
+
 
 // xử lý mở / tắt list bài hát
 btnlistsong.onclick = () => {
