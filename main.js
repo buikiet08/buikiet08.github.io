@@ -32,7 +32,6 @@ var volumemute = $('.volume_mute');
 var moonsun = $('.moon_sun');
 var moon = $('.moon');
 var sun = $('.sun');
-var stopweb = $('.stopweb');
 var lyrics = $('.lyrics');
 var lyricson = $('.lyric');
 var timeStart = $('.timeStart');
@@ -1422,10 +1421,12 @@ btnprev.onclick = function () {
     if(israndom) {
         playrandom();
         playsong();
+        $('.ani-song').style.opacity = 1;
     }
     else{
         prev();
         playsong();
+        $('.ani-song').style.opacity = 1;
     }
     render();
     renderlyric();
@@ -1444,10 +1445,12 @@ btnnext.onclick = function () {
     if(israndom) {
         playrandom();
         playsong();
+        $('.ani-song').style.opacity = 1;
     }
     else{
         next();
         playsong();
+        $('.ani-song').style.opacity = 1;
     }
     render();
     renderlyric()
