@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            width: 200px;
+            height: 20px;margin: 0 20px;
+
+        }
+        a{
+            text-decoration: none;
+            width: 60px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <input type="text" class="input">
+        <a href="#" class="btn" >ADD</a>
+    
+        <div class="renders">
+            <ul class="render">
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        var storageKey = 'toloList';
+        var dataString = localStorage.getItem(storageKey)
+        var todolist ;
+        if(dataString) {
+            todolist = JSON.parse(dataString);
+        }
+        else{
+            todolist = [];
+        }
+        var btn = document.querySelector('.btn');
+
+        btn.addEventListener('click' , renderList)
+        function renderList () {
+            var input = document.querySelector('.input');
+            var newItem = input.value;
+
+            todolist.push(newItem);
+            // gọi lại hàm render
+            output();
+
+            input.value = '';
+
+            localStorage.setItem(storageKey, JSON.stringify(todolist))
+        }
+
+        function output () {
+            var render = document.querySelector('.render');
+            var content = todolist.map(function(item) {
+                return '<li>' + item + '</li>';
+            })
+            render.innerHTML = content.join('');
+        }
+        output();
+    </script>
+</body>
+</html>
