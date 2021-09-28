@@ -14,6 +14,8 @@ var restar = $('.restar');
 var namesong = $('.namesong');
 var outher = $('.outhersong');
 var cdthump = $(".cd_thump");
+var cdthumpAfter = $(".cd_thump-after");
+
 var propress = $('#propress');
 var propressVolumne = $('#propress_volum');
 var btnlistsong = $('.btn_list-song');
@@ -1442,24 +1444,16 @@ var isrestar = false;
 var isVolume = false;
 
 var pagelistSong = $('.page-list_song');
-// in ra danh sách bài hát
-// <div class="first_song ${index === i ? 'active6' : ''}" data-index="${index}">
-        //     <img src="${song.songimg}" alt="" class="song__img">
-        //     <div class="song_name-list">
-        //         <h4 class="namesong_list">${song.songname}</h4>
-        //         <span class="outhersong_list">${song.songouther}</span>
-        //     </div>
-        //     <span class="song_option">
-        //         <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-        //     </span>   
-        // </div>
 // render page list song
 function render () {
     var htmls = songlist.map(function (song, index) {
         return `       
         <div class="list-song_card ${index === i ? 'active6' : ''}" data-index="${index}">
             <div class="list-song-card-img">
-                <img src="${song.songimg}" alt="">
+                <img src="${song.songimg}" class="img-list-song_card" alt="">
+                <div class="icon-active-lopphu">
+                    <img src="image/icon-playing.gif" class="img-icon-active" alt="">
+                </div>
                 <div class="list-song-card-lopphu">
                     <ion-icon name="play-outline"></ion-icon>  
                 </div>
@@ -1483,7 +1477,7 @@ function renderNew () {
     
         if(song.idNewSong) {
             return `
-            <div class="page-new-card  ${index === i ? 'active6' : ''}" data-index="${index}">
+            <div class="page-new-card" data-index="${index}">
                 <div class="page-new-card-data">
                     <span class="number number1">${song.idNewSong}</span>
                     <span class="dau-gach">-</span>
@@ -1519,10 +1513,8 @@ function renderhomeTop () {
     var htmls = songlist.map(function (song , index) {
         if(song.songtop) {
             return `
-            <div class="music-card   ${index === i ? 'active6' : ''}" data-index="${index}">
+            <div class="music-card" data-index="${index}">
                 <img src="${song.songimg}" alt="">
-                <span class="song-name">${song.songname}</span>
-                <span class="song-outher">${song.songouther}</span>
             </div>
             `
         }
@@ -1538,7 +1530,7 @@ function renderhomePopular () {
     var htmls = songlist.map(function (song , index) {
         if(song.songid) {
             return `
-            <div class="popular-card ${index === i ? 'active6' : ''}" data-index="${index}">
+            <div class="popular-card" data-index="${index}">
                 <div class="popular-left">
                     <ion-icon name="play-outline"></ion-icon>
                     <img src="${song.songimg}" alt="">    
@@ -1565,7 +1557,7 @@ function renderhomeNew () {
     var htmls = songlist.map(function (song, index) {
         if(song.songid) {
             return `
-            <div class="new-song-card ${index === i ? 'active6' : ''}" data-index="${index}">
+            <div class="new-song-card" data-index="${index}">
                 <img src="${song.songimg}" alt="">
                 <span class="new-song-name">${song.songname}</span>
                 <span class="new-song-outher">${song.songouther}</span>    
@@ -2011,11 +2003,11 @@ var sr = ScrollReveal ({
     delay : 400
 })
 
-sr.reveal('.cd');
-sr.reveal('.song_name, .volumne' ,{origin:'top'})
-sr.reveal('.stop_volumn , .moon_sun' ,{origin:'top', delay:600})
-sr.reveal('.btn_list-active, .range, #currentTime , .ani-song', {origin : 'left' , delay:600});
-sr.reveal('.btn_list-song , .control', {origin : 'right' , delay:600})
+// sr.reveal('.cd');
+// sr.reveal('.song_name, .volumne' ,{origin:'top'})
+// sr.reveal('.stop_volumn , .moon_sun' ,{origin:'top', delay:600})
+// sr.reveal('.btn_list-active, .range, #currentTime , .ani-song', {origin : 'left' , delay:600});
+// sr.reveal('.btn_list-song , .control', {origin : 'right' , delay:600})
 
 
 
@@ -2027,20 +2019,27 @@ sr.reveal('.btn_list-song , .control', {origin : 'right' , delay:600})
 
 // xử li scroll top music
 var topMusic = $('.top-list-music');
-var topmusicPrev = $('#top-music-prev');
-var topmusicNext = $('#top-music-next');
+var topmusicPrev = $('.icon-banner_prev');
+var topmusicNext = $('.icon-banner_next');
+var i = 250;
+topmusicNext.addEventListener('click', function () {
+    handleClickBanner(1)
+})
 
-var i = 200;
-topmusicNext.onclick = function () {
-    i++;
-    topMusic.scrollLeft = i;
-    i += 200;
-
-}
-topmusicPrev.onclick = function () {
-    i--;
-    topMusic.scrollLeft = -400 + i;
-    i -= 200;
+topmusicPrev.addEventListener('click', function () {
+    handleClickBanner(-1)
+})
+function handleClickBanner (dicretion) {
+    if(dicretion === 1) {
+        i ++;
+        topMusic.scrollLeft = i;
+        i += 250;
+        if(i >= 1255) return;
+    }else if(dicretion === -1) {
+        if(i = 0) return;
+        topMusic.scrollLeft = -i;
+        i -= 250;
+    }
 }
 
 // xử lí scroll newsong
@@ -2077,6 +2076,7 @@ kindsingerPrev.onclick = function () {
 // xử lý click chuyển trang
 var listNavi = $('.navi-item-list');
 var naviItem = $$('.navi-item');
+var allPage = $$('.page');
 // get page
 var pageHome = $('.page-home');
 var pageList = $('.page-list');
@@ -2093,6 +2093,9 @@ naviItem.forEach(function (item) {
             pageList.style.display = 'none';
             pageNew.style.display = 'none';
             pageKind.style.display = 'none';
+            $('.kind-country').style.display = 'none';
+            $('.result').style.display = 'none';
+            $('#container-prev').style.color = 'rgba(74, 74, 74, 0.6)'
 
             // add/ remove active
             $('#home').classList.add('active');
@@ -2105,6 +2108,9 @@ naviItem.forEach(function (item) {
             pageList.style.display = 'block';
             pageNew.style.display = 'none';
             pageKind.style.display = 'none';
+            $('.kind-country').style.display = 'none';
+            $('.result').style.display = 'none';
+            $('#container-prev').style.color = 'rgba(74, 74, 74, 0.6)'
 
             // add/ remove active
             $('#home').classList.remove('active');
@@ -2117,6 +2123,9 @@ naviItem.forEach(function (item) {
             pageList.style.display = 'none';
             pageNew.style.display = 'block';
             pageKind.style.display = 'none';
+            $('.kind-country').style.display = 'none';
+            $('.result').style.display = 'none';
+            $('#container-prev').style.color = 'rgba(74, 74, 74, 0.6)'
 
             // add/ remove active
             $('#home').classList.remove('active');
@@ -2129,6 +2138,9 @@ naviItem.forEach(function (item) {
             pageList.style.display = 'none';
             pageNew.style.display = 'none';
             pageKind.style.display = 'block';
+            $('.kind-country').style.display = 'none';
+            $('.result').style.display = 'none';
+            $('#container-prev').style.color = 'rgba(74, 74, 74, 0.6)'
 
             // add/ remove active
             $('#home').classList.remove('active');
@@ -2136,11 +2148,40 @@ naviItem.forEach(function (item) {
             $('#new').classList.remove('active');
             $('#kind').classList.add('active');
         }
+        allPage.forEach(function (e) {
+            // page home mặc định display = block khi vào trang web / các trang còn lại display = none
+            if($('.page-home')) {
+                $('.page-home').style.display = 'block'
+            }else{
+                e.style.display = 'none';
+            }
+
+        })
+        
 
     }
 })
+// xử lý nhấn nút container prev tắt page kind country và result
+$('#container-prev').onclick = function () {
+    $('.kind-country').style.display = 'none';
+    $('.result').style.display = 'none';
+    $('#container-prev').style.color = 'rgba(74, 74, 74, 0.6)';
+    pageHome.style.display = 'block'
+}
 
-
+var allpagePrev = $$('.page-prev');
+// allpagePrev.forEach(function (e) {
+//     if(e.match()) {
+//         $('#container-prev').onclick = function () {
+//             console.log('kkk')
+//         }
+//     }else if(e === $('.result')) {
+//         $('#container-prev').onclick = function () {
+//             console.log('hhh')
+//         }
+//     }
+// })
+    
 // xử lí bật tắt theme
 var iconTheme = $('#theme');
 var iconcloseTheme = $('#theme-close');
@@ -2181,7 +2222,6 @@ btnthemeDefault.onclick = function () {
     $('#body').classList.remove('theme2');
     $('#body').classList.remove('theme3');
 }
-
 
 
 // xử lý chuyển đổi page kind
@@ -2252,7 +2292,10 @@ var kindcountryheader = $('.country-list-song-header');
 var countrysongCards =$('.country-song-cards');
 kindCards.forEach(function (kindCard, index) {
     kindCard.onclick = function () {
-        $('.kind-country').style.display = 'flex';
+        $('.kind-country').style.display = 'block';
+        pageKind.style.display = 'none';
+        $('#container-prev').style.color = 'white'
+
         if(index === 0) {
             var htmlinfo = listKind.map(function (kind, index) {
                 if(kind.kindid1) {
@@ -2623,13 +2666,15 @@ kindCards.forEach(function (kindCard, index) {
     }
 });
 
-btnClosekindCards.onclick = function () {
-    $('.kind-country').style.display = 'none';
-}
+// btnClosekindCards.onclick = function () {
+//     $('.kind-country').style.display = 'none';
+// }
+
+
 // xử lý tắt page result
-$('#result-prev').onclick = function () {
-    $('.result').style.display = 'none'
-}
+// $('#result-prev').onclick = function () {
+//     $('.result').style.display = 'none'
+// }
 // xử lý tìm kiếm bài hát
 // 1. render ra tên bài hát
 var searchInput = $('#search');
@@ -2702,14 +2747,27 @@ btnsearch.onclick = function () {
 // xử lý lặp các tên rồi render ra bài hát cần tìm
 var allsearchSong = $$('.search-box-list .search-list-song')
 allsearchSong.forEach(function (e, index) {
-    e.onclick = function () {       
+    e.onclick = function () {
+        // nút prev hiện
+        $('#container-prev').style.color = 'white'
+        // ẩn các page còn lại
+        if(pageHome && pageKind && pageList && pageNew && $('.kind-country')) {
+            pageHome.style.display = 'none';
+            pageList.style.display = 'none';
+            pageNew.style.display = 'none';
+            pageKind.style.display = 'none';
+            $('.kind-country').style.display = 'none';
+        }       
+        // tự động tắt ô search history 
         setTimeout(function () {
             $('.search-box').style.display = 'none';
             $('#search-close').click();
         },300)
+        // page result hiện
         $('.result').style.display = 'flex';
+        // hiện tên bài sau text 'top kết quả'
         $('.result-text').textContent = `" ${e.innerText} "`;
-        
+        // render ra bài hát cần tìm
         var htmlresult = songlist.map(function (song) {
             if(e.innerText === song.songname) {
                 return `
@@ -2732,14 +2790,78 @@ allsearchSong.forEach(function (e, index) {
         $('.result-songs').innerHTML = htmlresult.join('')
     }
 })
+// xử lý click vào video
+var allBannerCard = $$('.banner-card img');
+var videoID = $('#video');
+var bannerCard1 = $('.banner-card1');
+var bannerCard2 = $('.banner-card2');
+var bannerCard3 = $('.banner-card3');
+// videoID.style.display = 'none';
+bannerCard1.addEventListener('click', function () {
+    handleClickBannerCard(1)
+})
+bannerCard2.addEventListener('click', function () {
+    handleClickBannerCard(2)
+    
+})
+bannerCard3.addEventListener('click', function () {
+    handleClickBannerCard(3)
+    
+})
+function handleClickBannerCard (e) {
+    $('.MV').style.display = 'flex';
+    // videolist.forEach(function (vd) {
+        if(e === 1) {
+            videoID.innerHTML = `<source  src="video/The Kid LAROI, Justin Bieber - STAY (Official Video).mp4" id="videoson" type="video/mp4">`
 
-
-// xử lý scroll lyric theo tiến độ bài hát
-function scrollLyricSong () {
+        }else if(e === 2) {
+            videoID.innerHTML = `<source  src="video/The Kid LAROI, Justin Bieber - STAY (Official Video).mp4" id="videoson" type="video/mp4">`
+        }else if(e === 3) {
+            videoID.innerHTML = `<source  src="video/The Kid LAROI, Justin Bieber - STAY (Official Video).mp4" id="videoson" type="video/mp4">`
+        }
+    // })
     
 }
 
+$('.btn-close-MV').addEventListener('click' , function () {
+    $('.MV').style.display = 'none';
+    videoID.pause();    
+})
 
+
+
+
+// SETTING
+// xử lý tắt mở setting
+var settingBox = $('#setting-box');
+settingBox.onclick = function () {
+    $('.setting-box').classList.toggle('active')
+}
+
+// xử lý tắt mở notice
+var noticeBox = $('#notice-box');
+noticeBox.onclick = function () {
+    $('.notice-box').classList.toggle('active')
+}
+
+// xử lý tắt mở bars setting
+var barsSetting = $('.bars-setting');
+barsSetting.addEventListener('click' , function () {
+    $('.setting').classList.toggle('active')
+})
+
+
+// xử lý mở / tắt bars bottom
+var btnbarsBottom = $('.btn-bottom-bars');
+btnbarsBottom.addEventListener('click', function () {
+    $('.bottom-bars').classList.toggle('active')
+})
+// btnbarsBottom.addEventListener('touchstart', function (e) {
+//     console.log()
+//     if (e.touches === clientY) {
+//         $('.bottom-bars').classList.toggle('active')
+//     }
+// })
 
 
 
