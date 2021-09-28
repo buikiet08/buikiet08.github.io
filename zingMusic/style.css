@@ -344,7 +344,8 @@ span.restar.active{
     cursor: pointer;
 }
 .list-song_card.active6 {
-    background-color: #ec1f55;
+    background-color: #fff;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
 }
 .first_song.active6 .song_name-list,
 .first_song.active6 .song_option{
@@ -528,7 +529,30 @@ body{
     overflow: hidden;
     background:#f1f1f1;
     position: relative;
+    user-select: none;
     
+}
+.theme0-1{
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background-color: #3b67f3;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4),
+                -5px -5px 10px rgba(0,0,0,0.2);
+}
+.theme0-2{
+    position: absolute;
+    bottom: -4%;
+    left: -4%;
+    width: 400px;
+    height: 400px;
+    background-color: #3b67f3;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4),
+                -5px -5px 10px rgba(0,0,0,0.2);
 }
 
 /* theme1 */
@@ -576,6 +600,18 @@ body.theme1 .app .container .page-kind .kind-country .kind-country-data .kind-co
     background: rgba(240, 113, 208, 0.4);
     box-shadow: 4px 4px 4px rgba(255,255,255,0.2);
     display: flex;
+}
+body.theme1 .app .container .kind-country .kind-country-data .kind-country-info,
+body.theme1 .app .container .kind-country .kind-country-data .kind-country-list-song .country-list-song-header{
+    color: #fff;
+}
+body.theme1 .theme0-1,
+body.theme1 .theme0-2{
+    display: none;
+}
+body.theme1 .app .bottom-bars .bottom-content .btn-bottom-bars{
+    background-color: #f9c6c5;
+    color: #fff;
 }
 
 /* theme2 */
@@ -644,7 +680,18 @@ body.theme2 .app .container .page-kind .kind-country .kind-country-data .kind-co
     background: rgba(75, 32, 110, 0.4);
     box-shadow: 4px 4px 4px rgba(255,255,255,0.2);
 }
-
+body.theme2 .app .container .kind-country .kind-country-data .kind-country-info,
+body.theme2 .app .container .kind-country .kind-country-data .kind-country-list-song .country-list-song-header{
+    color: #fff;
+}
+body.theme2 .theme0-1,
+body.theme2 .theme0-2{
+    display: none;
+}
+body.theme2 .app .bottom-bars .bottom-content .btn-bottom-bars{
+    background-color: #37075d;
+    color: #fff;
+}
 /* theme3 */
 
 body::before,
@@ -707,6 +754,18 @@ body.theme3 .app .container .page-kind .kind-country .kind-country-data .kind-co
 body.theme3 .app .container .page-list .page-list_song .list-song_card .list-song-card-img .icon-active-lopphu.active6{
     display: flex;
 
+}
+body.theme3 .app .container .kind-country .kind-country-data .kind-country-info,
+body.theme3 .app .container .kind-country .kind-country-data .kind-country-list-song .country-list-song-header{
+    color: #fff;
+}
+body.theme3 .theme0-1,
+body.theme3 .theme0-2{
+    display: none;
+}
+body.theme3 .app .bottom-bars .bottom-content .btn-bottom-bars{
+    background-color: #181818;
+    color: #fff;
 }
 h3{
     font-family: 'Poppins';
@@ -799,7 +858,6 @@ h3{
 }
 .navbar{
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     width: 100%;
 }
@@ -817,6 +875,7 @@ h3{
     border-radius: 30px;
     min-width: 256px;
     margin-left: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
 }
 .search ion-icon{
     color: #8b9dfb;
@@ -828,7 +887,7 @@ h3{
     margin-left: 0.8rem;
     font-size: 0.8rem;
     letter-spacing: 1px;
-    color: #fff;
+    color: #111;
     border: none;
     outline: none;
     background: transparent;
@@ -883,7 +942,7 @@ h3{
     margin-left: 0.4rem;
     font-size: 1rem;
     cursor: pointer;
-    background-color: rgba(255,255,255,0.08);
+    background-color: rgba(255,255,255,0.5);
     border-radius: 50%;
     padding: 10px;
 }
@@ -897,7 +956,8 @@ h3{
     right: 3rem;
     min-width: 220px;
     border-radius: 0.5rem;
-    background-color: #3b67f3;
+    background-color: #f1f1f1;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
     z-index: 10;
 }
 .setting-box.active{
@@ -932,7 +992,8 @@ h3{
     right: 2px;
     width: 220px;
     border-radius: 0.5rem;
-    background-color:#45d5a5 ;
+    background-color:#f1f1f1;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
     padding: 60px 22px;
     z-index: 10;
 }
@@ -1208,7 +1269,7 @@ h3{
     left: 0;
     right: 0;
     height: 72px;
-    background:#cfe3e2;
+    background:#f1f1f1;
     box-shadow: 0px -2px 4px rgba(0,0,0,0.2);
     padding: 0px 22px; 
     z-index: 4;
@@ -1333,8 +1394,11 @@ h3{
     grid-template-columns: 30%;
     grid-gap: 22px;
     margin-top: 1.6rem;
+    width: 100%;
+    position: relative;
 }
 .banner-card{
+    width: 100%;
     height: 176px;
     border-radius: 0.2rem;
     overflow: hidden;
@@ -1386,10 +1450,10 @@ h3{
 .page-list_song::-webkit-scrollbar{
     width: 0.4rem;
     border-radius: 0.5rem;
-    background-color: #282828;
+    background-color: #d3d3d3;
 }
 .page-list_song::-webkit-scrollbar-thumb{
-    background-color: #111;
+    background-color: #999;
     border-radius: 0.5rem;
 }
 .list-song_card{
@@ -1780,9 +1844,6 @@ h3{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 22px;
 }
-.chude-card{
-    
-}
 .chude-card img{
     width: 100%;
 }
@@ -1942,6 +2003,7 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #333;
 }
 .kind-country-info img{
     border-radius: 0.5rem;
@@ -1950,14 +2012,12 @@ h3{
     font-size: 22px;
     line-height: 30px;
     padding: 0.5rem 0;
-    color: #fff;
     font-family: sans-serif;
     text-align: center;
 }
 .kind-country-info span{
     font-size: 14px;
     line-height: 20px;
-    color: #ffffff80;
     font-family: sans-serif;
 }
 .kind-country-info button{
@@ -1991,20 +2051,20 @@ h3{
 .kind-country-list-song::-webkit-scrollbar{
     width: 0.4rem;
     border-radius: 0.5rem;
-    background-color: #555;
+    background-color: #d3d3d3;
 }
 .kind-country-list-song::-webkit-scrollbar-thumb{
-    background-color: #292929;
+    background-color: #999;
     border-radius: 0.5rem;
 }
 .country-list-song-header{
     display: flex;
     flex-direction: column;
+    color: #333;
 }
 .country-list-song-header h4{
     font-size: 14px;
     font-family: sans-serif;
-    color: #fff;
     font-weight: 500;
     display: flex;
     justify-content: flex-start;
@@ -2015,7 +2075,6 @@ h3{
 .country-list-song-header h4 span{
     font-size: 14px;
     font-family: sans-serif;
-    color: #ffffff80;
     padding-right: 6px;
 }
 .country-list-song-header_data{
@@ -2024,7 +2083,6 @@ h3{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    color: #ffffff80;
     position: relative;
 }
 .country-list-song-header_data span{
@@ -2036,7 +2094,7 @@ h3{
     bottom: -0.6rem;
     width:100%;
     height: 1px;
-    background-color: #292929;
+    background-color: #999;
 }
 .country-song-cards{
     margin-top: 0.6rem;
@@ -2056,7 +2114,7 @@ h3{
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #292929;
+    background-color: #999;
 }
 
 /* result search */

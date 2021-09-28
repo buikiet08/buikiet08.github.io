@@ -41,7 +41,7 @@ var timeEnd = $('.timeEnd');
 var iconVolume = $('.icon-volume');
 
 var songlist = [
-    {   
+    {  
         idNewSong:1,
         idsontung : true,
         idVN : 1,
@@ -281,6 +281,7 @@ var songlist = [
         Hẹn gặp lại em ngày tháng của sau này`
     },
     {        
+        idHome: 1,
         idsontung : true,
         idVN : 1,
         songtop : 1,
@@ -878,6 +879,7 @@ var songlist = [
         Để khi đi trốn có người đi tìm`
     },
     {
+        idHome: 1,
         idKOREA : 1,
         idNewSong:4,
         idBP:1,
@@ -957,6 +959,14 @@ var songlist = [
         The loudest in the room`
     },
     {
+        idHome: 1,
+        idUS : 1,
+        songimg : 'image/Lil-Nas-X-Jack-Harlow-INDUSTRY-BABY-screenshot-2021-billboard-1548-1627063085-compressed.jpg',
+        songouther : 'Lil Nas X',
+        songname : 'INDUSTRY BABY',
+        songlink : 'list_song/Lil Nas X, Jack Harlow - INDUSTRY BABY (Official Video).mp3'
+    },
+    {
         idUS : 1,
         songimg : 'image/71R0KA284rL._SS500_.jpg',
         songouther : 'Pink Sweat',
@@ -1009,6 +1019,15 @@ var songlist = [
         Know I'm not perfect, but I hope you see my worth<br/>
         'Cause it's only you, nobody new, I put you first<br/>
         And for you, girl, I swear I'd do the worst`
+    },
+    {
+        idHome: 1,
+        idBTS : 1,
+        idKOREA : 1,
+        songimg : 'image/sub_buzz_3721_1622816109_63_d86da2edce.jpg',
+        songouther : 'BTS',
+        songname : 'Butter',
+        songlink : `list_song/BTS (방탄소년단) 'Butter' Official MV.mp3`
     },
     {        
         idUS : 1,
@@ -1070,6 +1089,7 @@ var songlist = [
         Can you come through?`
     },
     {   
+        idHome: 1,
         idNewSong:5,    
         idjustin : true, 
         idUS : 1,
@@ -1511,7 +1531,7 @@ renderNew();
 var musichomeTop = $('.top-list-music');
 function renderhomeTop () {
     var htmls = songlist.map(function (song , index) {
-        if(song.songtop) {
+        if(song.idHome) {
             return `
             <div class="music-card" data-index="${index}">
                 <img src="${song.songimg}" alt="">
@@ -1532,7 +1552,7 @@ function renderhomePopular () {
             return `
             <div class="popular-card" data-index="${index}">
                 <div class="popular-left">
-                    <ion-icon name="play-outline"></ion-icon>
+                    <ion-icon name="musical-note-outline"></ion-icon>
                     <img src="${song.songimg}" alt="">    
                     <div class="popular-song-data">
                         <span class="popular-song-name">${song.songname}</span>
@@ -1997,11 +2017,11 @@ audio.addEventListener('timeupdate', function () {
     settimeupdate();
 })
 // ani scroll
-var sr = ScrollReveal ({
-    distance : '60px',
-    duration : 2500,
-    delay : 400
-})
+// var sr = ScrollReveal ({
+//     distance : '60px',
+//     duration : 2500,
+//     delay : 400
+// })
 
 // sr.reveal('.cd');
 // sr.reveal('.song_name, .volumne' ,{origin:'top'})
@@ -2634,7 +2654,7 @@ kindCards.forEach(function (kindCard, index) {
             });
             kindcountryheader.innerHTML = htmlheader.join('')
             var htmlsong = songlist.map(function (song, index) {
-                if(song.idsontung) {
+                if(song.idBTS) {
                     return `
                     <div class="country-song-card ${index === i ? 'active6' : ''}" data-index="${index}">
                         <div class="page-new-card-data">
@@ -2852,10 +2872,19 @@ barsSetting.addEventListener('click' , function () {
 
 
 // xử lý mở / tắt bars bottom
-var btnbarsBottom = $('.btn-bottom-bars');
-btnbarsBottom.addEventListener('click', function () {
-    $('.bottom-bars').classList.toggle('active')
+var btnbarsBottomUp = $('.up');
+var btnbarsBottomDown = $('.down');
+
+btnbarsBottomUp.addEventListener('click', function () {
+    $('.bottom-bars').classList.add('active')
+    btnbarsBottomUp.classList.add('active')
+    btnbarsBottomDown.classList.remove('active')
 })
+btnbarsBottomDown.addEventListener('click', function () {
+    $('.bottom-bars').classList.remove('active')
+    btnbarsBottomUp.classList.remove('active')
+    btnbarsBottomDown.classList.add('active')
+} )
 // btnbarsBottom.addEventListener('touchstart', function (e) {
 //     console.log()
 //     if (e.touches === clientY) {

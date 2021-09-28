@@ -57,6 +57,10 @@
 }
 
 @media screen and (max-width:739px) {
+    .theme0-1,
+    .theme0-2{
+        display: none;
+    }
     .time-song{
         display: none;
     }
@@ -69,7 +73,7 @@
         height: 72px;
         margin-bottom: 40px;
         overflow: hidden;
-        transition: 0.4s linear;
+        transition: 0.2s linear;
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: 100%;
@@ -82,6 +86,13 @@
         align-items: center;
         width: 100%;
         z-index: 10;
+        overflow: hidden;
+    }
+    .bottom-content .control-content{
+        width: 40%;
+    }
+    .bottom-content .popular-song-data{
+        max-width: 50px;
     }
     .bottom-bars .lyric{
         display: flex;
@@ -99,7 +110,7 @@
         height: 30px;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
-        background-color: transparent;
+        background-color: #f1f1f1;
         color: #282828;
         cursor: pointer;
     }
@@ -125,7 +136,7 @@
     .bottom-bars.active .popular-song-data{
         height: auto;
         text-align: center;
-        width: 100%;
+        max-width: 100px;
         order: 1;
     }
     .bottom-bars.active .popular-song-name{
@@ -168,8 +179,14 @@
     .control{
         width: auto;
     }
+    .btn-bottom-bars ion-icon.active{
+        display: none;
+    }
     .bottom-bars.active .btn-bottom-bars{
-        top: 0;
+        top: 10px;
+    }
+    .bottom-bars.active .btn-bottom-bars .down{
+        font-size: 2rem;
     }
     /* navigation */
     .navigation{
@@ -200,7 +217,7 @@
         flex-direction: column;
     }
     .navi-item span{
-        font-size: 12px;
+        font-size: 10px;
     }
     .navi-item::before{
         display: none;
@@ -215,7 +232,7 @@
         
     }
     .top-list-music{
-        grid-auto-columns: 100%;
+        grid-auto-columns: 86%;
     }
     /* nav bars */
     .navbar{
@@ -296,6 +313,14 @@
     .page-kind-outher .page-kind-cards{
         grid-auto-columns: 50%;
     }
+    .list_banner-cards{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 98%;
+        position: relative;
+        overflow-x: auto;
+        width: 100%;
+    }
     /* kind country */
     .kind-country{
         left: 0px;
@@ -322,5 +347,24 @@
     }
     .result .result-songs .list-song_card{
         width: 100%;
+    }
+    /* search */
+    .search{
+        min-width: 200px;
+    }
+    .search input{
+        width: 170px;
+    }
+    /* chủ đề */
+    .chude-list{
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1rem;
+    }
+    .chude-card span{
+        font-size: 10px;
+    }
+    .chude-card-lopphu span{
+        font-size: 0.6rem;
+        padding: 0.2rem 0.6rem;
     }
 }
