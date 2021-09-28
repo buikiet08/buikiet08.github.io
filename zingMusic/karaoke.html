@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background: #353535;
+  font-family: sans-serif, arial;
+  background-size: cover;
+  text-align: center;
+}
+
+svg {
+  background: #fff;
+  padding: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100px;
+  top: 200px;
+}
+
+.lyrics {
+  margin: 0 auto;
+}
+
+li {
+  margin: 50px 0;
+}
+
+li span {
+  font-size: 2em;
+  color: #8c8c8c;
+  line-height: 70px;
+  padding: 15px 35px;
+}
+
+.selected {
+  transition: background-color 1s, color 0.2s,font-size .4s  linear;
+  background: white;
+  color: black;
+  
+  font-size: 2.2em;
+}
+
+.resetlyricsStyle {
+  transition: background-color, color .3s linear;
+  background: none;
+  color: #8c8c8c;
+}
+    </style>
+</head>
+<body>
+    <svg class="progress" height="120" viewBox="0 0 120 120">
+        <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+        <circle stroke-dasharray=" 339.292" stroke-dashoffset="" class="progressValue" cx="60" cy="60" r="54" fill="none" stroke="#f77a52" stroke-width="12" />
+    </svg>
+    <ul class="lyrics"></ul>
+    <audio id="audioElement" preload="auto" autoplay> 
+        <source src="https://www.dropbox.com/s/aacta7o0em0u4rm/house-of-rising-sun.mp3?dl=1" type="audio/mpeg">
+        <p>Whoops, your browser does not support the audio element.</p>
+    </audio>
+
+
+    <!--  -->
+    <script>
+        $(document).ready(function() {
+
+var Karaoke = function() {
+    this.$audioElem = $('#audioElement');
+    this.$divLyrics = $('.lyrics');
+    this.lyrics = [
+        { "end": "19", "start": "12", "text": "There is a house in New Orleans" },
+        { "end": "24", "start": "19", "text": "They call the Rising Sun" },
+        { "end": "31", "start": "25", "text": "And it's been the ruin of many a poor boy" },
+        { "end": "36", "start": "31", "text": "And God I know I'm one" },
+
+        { "end": "51", "start": "48", "text": "My mother was a tailor" },
+        { "end": "58", "start": "54", "text": "She sewed my new bluejeans" },
+        { "end": "66", "start": "60", "text": "My father was a gamblin' man" },
+        { "end": "70", "start": "67", "text": "Down in New Orleans" },
+
+        { "end": "87", "start": "81", "text": "Now the only thing a gambler needs" },
+        { "end": "92", "start": "88", "text": "Is a suitcase and trunk" },
+        { "end": "99", "start": "94", "text": "And the only time he's satisfied" },
+        { "end": "104", "start": "99", "text": "Is when he's on, a drunk" },
+
+        { "end": "152", "start": "149", "text": "Oh mother tell your children" },
+        { "end": "158", "start": "154", "text": "Not to do what I have done" },
+        { "end": "166", "start": "161", "text": "Spend your lives in sin and misery" },
+        { "end": "171", "start": "167", "text": "In the House of the Rising Sun" },
+
+        { "end": "187", "start": "182", "text": "Well, I got one foot on the platform" },
+        { "end": "192", "start": "188", "text": "The other foot on the train" },
+        { "end": "199", "start": "194", "text": "I'm goin' back to New Orleans" },
+        { "end": "204", "start": "200", "text": "To wear that ball and chain" },
+
+        { "end": "220", "start": "214", "text": "Well, there is a house in New Orleans" },
+        { "end": "225", "start": "222", "text": "They call the Rising Sunn" },
+        { "end": "232", "start": "227", "text": "And it's been the ruin of many a poor boy" },
+        { "end": "237", "start": "232", "text": "And God I know I'm one" }	
+    ];
+    this.addLyricsInDom();
+    this.canPlayMedia();
+};
+
+Karaoke.prototype.canPlayMedia = function(){
+    const audio = document.querySelector('#audioElement');
+    //https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/canplay_event
+    audio.addEventListener('canplay', function () {
+        try {this.run()}
+        catch(e) {alert(e)}
+    }.bind(this), false);
+};
+
+Karaoke.prototype.run = function(){
+    this.svgLoader();
+    this.timeupdate();
+};
+
+Karaoke.prototype.addLyricsInDom = function() {
+    this.lyrics.map((item, i) => {
+        let elem = document.createElement('li');
+        let elemInner = document.createElement('span');
+        elem.appendChild(elemInner).innerHTML = this.lyrics[i].text;
+        this.$divLyrics.append(elem);
+    })
+};
+
+Karaoke.prototype.svgLoader = function() {
+    const getLengthOfDashoffset = document.querySelector('.progressValue').getTotalLength();
+    const coef = getLengthOfDashoffset / this.lyrics[0].start;
+    let i = 0;
+
+    let gauge = setInterval(function() {
+        i++
+        $('.progressValue').css('strokeDashoffset', i * coef);
+        if (i >= this.lyrics[0].start) {
+            clearInterval(gauge);
+            $('svg').fadeOut('slow');
+        }
+    }.bind(this), 1000);
+};
+
+
+Karaoke.prototype.timeupdate = function() {
+    var scrollHeight = 120;
+       var previousIndex;
+    this.$audioElem.on('timeupdate',function(e){
+        this.lyrics.forEach(function(elem, index, array) {
+            if (e.target.currentTime >= elem.start && e.target.currentTime <= elem.end) {
+                    this.$divLyrics.children().eq(index).find('span').addClass('selected');
+      
+                if (elem.end >= e.target.currentTime && index != 0) {
+
+                       this.$divLyrics.children().eq(index - 1).find('span').addClass('resetlyricsStyle');
+                       
+                    if (index >= 3 && index != previousIndex) {
+                        $("html,body").animate({ scrollTop: scrollHeight}, 1000);
+                        scrollHeight += 120;
+                    }
+                    previousIndex = index;
+                }
+            }
+        }.bind(this));
+}.bind(this))
+
+};
+
+new Karaoke();
+
+});
+    </script>
+</body>
+</html>

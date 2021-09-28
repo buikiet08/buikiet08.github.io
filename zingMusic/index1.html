@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        ion-icon{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: blueviolet;
+            /* background-color: black; */
+        }
+        i{
+            font-size: 2.2rem;
+            margin: 0 1rem;
+            color: #333;
+        }
+        span{
+            text-align: center;
+            line-height: 1.4rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <i class="fas fa-cog cd"></i>        
+        <span>Hệ thống đang được nâng cấp <br> Xin lỗi vì sự bất tiện này !!!</span>
+        <i class="fas fa-cogs"></i>
+
+        <div>Registration closes in <span id="time">48:00:00</span> minutes!</div>
+    </div>
+    <script>
+        function startTimer(duration, display) {
+        var timer = duration,hours,minutes, seconds;
+    setInterval(function () {
+        hours = parseInt(timer / 60 , 10);
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+
+        display.textContent = hours + ":" + minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+        }, 1000);
+    }
+
+window.onload = function () {
+    var fiveMinutes = 60 * 48,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+        const cd = document.querySelector('.cd');
+        cd.animate([
+            {
+                transform: "rotate(360deg)"
+            }
+        ],
+        {
+            duration :4000,
+            iterations : Infinity //quay vô hạn
+        })
+    </script>
+</body>
+</html>
