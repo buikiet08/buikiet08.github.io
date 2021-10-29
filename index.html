@@ -4,62 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    <style>
-        body{
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-        }
-        .content{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-        ion-icon{
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            color: blueviolet;
-            /* background-color: black; */
-        }
-        i{
-            font-size: 2.2rem;
-            margin: 0 1rem;
-            color: #333;
-        }
-        span{
-            text-align: center;
-            line-height: 1.4rem;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-    </style>
+    <link rel="icon" href="image/z2742660054078_1f21f3068a98757c40784eabf037713e.jpg" type="image/x-icon">
+    <title>Play Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />    
 </head>
 <body>
-    <div class="content">
-        <i class="fas fa-cog cd"></i>        
-        <span>Hệ thống đang được nâng cấp <br> Xin lỗi vì sự bất tiện này !!!</span>
-        <i class="fas fa-cogs"></i>
+    
+    <div class="app">
+        <div class="content">
+            <div class="song">
+                <div class="btn_top">
+                    <span class="btn_list-active"></span>
+                    <div class="stop_volumn">
+                        <ion-icon name="volume-high-outline" class="volume_high active5"></ion-icon>
+                        <ion-icon name="volume-mute-outline" class="volume_mute "></ion-icon>
+                    </div>
+                    <div class="moon_sun">
+                        <ion-icon name="moon-outline" class="moon"></ion-icon>
+                        <ion-icon name="sunny-outline" class="sun active4"></ion-icon>
+                    </div>
+                    <ion-icon name="list-outline" class="btn_list-song"></ion-icon>
+                </div>
+                <!-- name song -->
+                <div class="song_name">
+                    <h2 class="namesong">
+                        music
+                    </h2>
+                    <span class="outhersong">sơn tùng</span>
+                </div>
+    
+                <!-- cd -->
+                <div class="cd">
+                    <div class="out-line">
+                        <img src="" alt="" class="cd_thump">
+                    </div>
+                </div>
+                
+                <audio src="" class="audio"></audio>
+                <div class="volumne">
+                    <span class="icon-volume"><ion-icon name="volume-high-outline"></ion-icon></span>
+                    <input type="range" id="propress_volum" class="thanhkeo" value="100" step="1" min="0" max="100" >
+                </div>
+                <div id="currentTime">
+                    <span class="timeStart">00:00</span>
+                    <span class="timeEnd">00:00</span>
+                </div>
+                <div class="ani-song">
+                    <img src="image/icon-playing.gif" alt="">
+                </div>
+                <div class="range">
+                    <input type="range" id="propress" class="thanhkeo" value="0" step="1" min="0" max="100" >
+                </div>
+                <!-- button control -->
+                <div class="control">
+                    <span class="restar">
+                        <ion-icon name="refresh-outline"></ion-icon>
+                    </span>
+        
+                    <span class="prev">
+                        <ion-icon name="play-back-outline"></ion-icon>
+                    </span>
+        
+                    <span class="playpause">
+                        <ion-icon name="play-outline" class="on"></ion-icon>
+                        <ion-icon name="pause-outline" class="off active"></ion-icon>
+                    </span>
+        
+                    <span class="next">
+                        <ion-icon name="play-forward-outline"></ion-icon>
+                    </span>
+        
+                    <span class="random">
+                        <ion-icon name="shuffle-outline"></ion-icon>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="lists_song">
+                <div class="list_song-son">
+    
+                </div>
+                <div class="btn_close-list">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="lyrics">
+                <div class="lyric">
+                    
+                </div>
+                <div class="btn_close-lyric">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+       
+        </div>
     </div>
-    <script>
-        const cd = document.querySelector('.cd');
-        cd.animate([
-            {
-                transform: "rotate(360deg)"
-            }
-        ],
-        {
-            duration :4000,
-            iterations : Infinity //quay vô hạn
-        })
-    </script>
 </body>
+<script src="scrollreveal.min.js"></script>
+<script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </html>
