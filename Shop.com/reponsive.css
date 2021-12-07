@@ -1,4 +1,10 @@
+body{
+    font-size: 100%;
+}
 @media  screen and (max-width:1023px)  {
+    body{
+        font-size: 80%;
+    }
     .promotion,
     .infomation,
     .categories,
@@ -39,6 +45,7 @@
         box-shadow: 0 4px 8px rgba(0,0,0,0.4);
         transition: all 0.4s linear;
     }
+    
     .menu.activemenu{
         left: 0;
     }
@@ -84,6 +91,9 @@
     }
 }
 @media  screen and (max-width:739px)  {
+    body{
+        font-size: 60%;
+    }
     .promotion,
     .infomation,
     .categories,
@@ -93,11 +103,23 @@
         grid-gap:30px;
         
     }
-    
+    header .menu{
+        width: 80%;
+    }
+    .promotion{
+        grid-gap:0;
+    }
     .section,
     .k-container{
         width: 100vw;
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .categorie-product-item{
+        margin: 0 10px 5px;
+        letter-spacing: 1px;
+    }
+    .categorie-product-link{
+        font-size: 8px;
     }
 }

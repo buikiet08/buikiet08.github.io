@@ -536,6 +536,7 @@ header .menu{
     display: inline-block;
 }
 .categorie-product-link{
+    font-size: 14px;
     color: #25292c;
     font-weight: 600;
 }

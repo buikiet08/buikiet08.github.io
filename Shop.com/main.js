@@ -5,13 +5,15 @@ var swiper = new Swiper(".product-container", {
 });
 if(window.innerWidth <= 1023) {
   var swiper = new Swiper(".product-container", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
   });
-}else if(window.innerWidth < 739 ) {
+}
+if(window.innerWidth <= 739 ) {
   var swiper = new Swiper(".product-container", {
     slidesPerView: 1,
     spaceBetween: 30,
+
   });
 }
 // company
@@ -28,7 +30,7 @@ if(window.innerWidth <= 1023) {
       el: ".swiper-pagination",
     },
   });
-}else if(window.innerWidth < 739 ) {
+}else if(window.innerWidth <= 739 ) {
   var swiper = new Swiper(".company", {
     slidesPerView: 2,
     pagination: {
