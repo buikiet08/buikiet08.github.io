@@ -8,29 +8,20 @@ ul{
 }
 a{
     text-decoration: none;
-    color: #888;
 }
 body{
     background: #fff;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;;
+}.section{
+    overflow-x: hidden;
 }
 button{
     border:none;
     outline: none;
     background: transparent;
 }
-a{
-    border-bottom: 1px solid #888;
-    border-width: 0;
-    transition: border-width 0.2s linear;
-    color: #888;;
-}
-a:hover{
-    border-width: 100%;
-    border-color: #ca7379;
-    color: #ca7379;
-}
+
 header {
     padding: 30px 0 10px;
 }
@@ -215,6 +206,7 @@ header .menu{
     box-shadow:4px 4px 4px 4px rgba(0,0,0,0.1);
     display: none;
     position: 0;
+    width: 160px;
 }
 .menu-item-dropdown{
     margin: 20px 0; 
@@ -285,6 +277,10 @@ header .menu{
 .product-name{
     margin: 20px 0;
     cursor: pointer;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 .product-name:hover{
     color: #ca7379;
@@ -339,8 +335,7 @@ header .menu{
 }
 /*search*/
 .search{
-    width: 200px;
-    
+    width: 200px; 
 }
 .search-form{
     width: 40px;
@@ -772,6 +767,12 @@ header .menu{
     padding: 30px;
     background: #fff;
 }
+.categori-product-img{
+    width: 110px;
+}
+.categori-product-img img{
+    width: 110px;
+}
 .categori-title{
     border-bottom: 1px solid #25282c;
     color: #25282c;
@@ -822,12 +823,20 @@ header .menu{
     font-weight: 600;
     margin-bottom: 15px;
     margin-top: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 .blog-text{
     color: #999;
     line-height: 1.7;
     margin-bottom: 15px;
     font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 
 }
 .blog-content a{

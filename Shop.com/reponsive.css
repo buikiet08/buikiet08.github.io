@@ -42,12 +42,6 @@
     .menu.activemenu{
         left: 0;
     }
-    .checbox:checked ~ .menu{
-        left: 100%;
-    }
-    .btn-close-menu:checked .menu{
-        left: -100%;
-    }
     .menu-list{
         flex-direction: column;
     }
