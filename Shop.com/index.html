@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reponsive.css">
+    
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <!--  -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- topbar -->
+<div class="topbar">
+    <div class="k-container">
+        <div class="left-topbar">
+            WELCOME GUEST! <a href="login-register.html">LOG IN</a> OR <a href="login-register.html">REGISTER</a>
+        </div>
+        <!-- /.left-topbar -->
+        <div class="right-topbar">
+            <ul class="list-inline">
+                <li>
+                    <a href="">
+                        MY SETTINGS
+                        <ion-icon name="chevron-down-outline">
+                    </a>
+                    <ul class="list-inline-dropdown">
+                        <li>
+                            <a href=""><ion-icon name="heart"></ion-icon> WISH LIST <span>(0)</span></a>
+                        </li>
+                        <li>
+                            <a href=""><ion-icon name="cart"></ion-icon> SHOPPING CART <span>(0)</span></a>
+                        </li>
+                        <li>
+                            <a href=""><ion-icon name="checkmark-done"></ion-icon> CHECKOUT <span>(0)</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        LANGUAGE: <span>EN</span>
+                        <ion-icon name="chevron-down-outline">
+                    </a>
+                    <ul class="list-inline-dropdown">
+                        <li>
+                            <a href=""><img src="https://nouthemes.net/html/zorka/assets/images/flags/United-Kingdom.png"> ENGLISH</a>
+                        </li>
+                        <li>
+                            <a href=""><img src="https://nouthemes.net/html/zorka/assets/images/flags/France.png"> FRANCE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        CURRENCY: <span>USD</span>
+                        <ion-icon name="chevron-down-outline">
+                    </a>
+                    <ul class="list-inline-dropdown">
+                        <li>
+                            <a href=""><ion-icon name="logo-euro"></ion-icon> EURO</a>
+                        </li>
+                        <li>
+                            <a href=""><ion-icon name="logo-euro"></ion-icon> POUND STERLING</a>
+                        </li>
+                        <li>
+                            <a href=""><ion-icon name="logo-euro"></ion-icon> US DOLLAR</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.right-topbar -->
+    </div>
+</div>
+<!-- /.topbar -->
+<!-- header -->
+<header>
+    <div class="k-container">
+        <!-- bar menu -->
+        <div class="bar-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <!-- /.logo -->
+        <div class="header-social">
+            <ul class="list-social">
+                <li><a href="#" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#" class="vk"><ion-icon name="logo-vk"></ion-icon></a></li>
+                <li><a href="#" class="behance"><ion-icon name="logo-behance"></ion-icon></a></li>
+            </ul>
+            <!-- /.list-social -->
+        </div>
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html">
+            <img src="https://nouthemes.net/html/zorka/assets/images/logo.png" alt="img">
+            </a>
+        </div>
+        <!-- /.header-social -->
+        <div class="top-cart">
+            <a href="shopping-cart.html">
+                <ion-icon name="cart-outline"></ion-icon>
+                <span>2</span>
+            </a>
+        </div>    
+    </div>
+    <div class="menu">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href='' class="menu-link">HOME</a><ion-icon name="chevron-down-outline"></ion-icon>
+                <ul class="menu-list-dropdown">
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">HOME 1</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">HOME 2</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">HOME 3</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">HOME 4</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">HOME 5</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">HOME 6</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-shop">
+                <a href='' class="menu-link">SHOP</a><ion-icon name="chevron-down-outline"></ion-icon>
+                <ul class="menu-list-dropdown">
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">SHOP 1</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">SHOP 2</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">SHOP 3</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">SHOP 4</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">SHOP 5</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">SHOP 6</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href='' class="menu-link">PORFOLIO</a><ion-icon name="chevron-down-outline"></ion-icon>
+                <ul class="menu-list-dropdown">
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">PORFOLIO 2 COL</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">PORFOLIO 3 COL</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">PORFOLIO 4 COL</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href='' class="menu-link">BLOG</a><ion-icon name="chevron-down-outline"></ion-icon>
+                <ul class="menu-list-dropdown">
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">SUBMENU 1</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">SUBMENU 2</a><ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">SUBMENU 3</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">SUBMENU 4</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">SUBMENU 5</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-pages">
+                <a href='' class="menu-link">PAGES</a><ion-icon name="chevron-down-outline"></ion-icon>
+                <ul class="menu-list-dropdown">
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">PAGE 1</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">PAGE 2</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">PAGE 3</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">PAGE 4</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">PAGE 5</a>
+                    </li>
+                    <li class="menu-item-dropdown">
+                        <a href="" class="menu-link-dropdown">PAGE 6</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href='' class="menu-link">CONTACT</a>
+            </li>
+        </ul>
+        <div class="search">
+            <div class="search-form">
+                <ion-icon name="search-outline"></ion-icon>
+                <input type="text" placeholder="Search ..." name="" />
+            </div>
+        </div>
+        <!-- btn close -->
+        <div class="btn-close-menu">
+            <ion-icon name="close-outline"></ion-icon>
+        </div>
+    </div>
+</header>
+<!-- banner slider -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://nouthemes.net/html/zorka/assets/images/slideshow1.jpg" class="d-block w-100" alt="...">
+        <div class="banner-content">
+            <p class="banner-name">ROLKA CLOTHING</p>
+            <h1 class="banner-title">A DAISY DALY</h1>
+            <button class="button-banner">SHOP NOW</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://nouthemes.net/html/zorka/assets/images/slideshow2.jpg" class="d-block w-100" alt="...">
+        <div class="banner-content">
+            <p class="banner-name">ROLKA CLOTHING</p>
+            <h1 class="banner-title">A DAISY DALY</h1>
+            <button class="button-banner">SHOP NOW</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://nouthemes.net/html/zorka/assets/images/slideshow3.jpg" class="d-block w-100" alt="...">
+        <div class="banner-content">
+            <p class="banner-name">ROLKA CLOTHING</p>
+            <h1 class="banner-title">A DAISY DALY</h1>
+            <button class="button-banner">SHOP NOW</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- section -->
+<div class="row">
+    <div class="col-md-12">
+
+    	<section class="section">
+    		<div class="promotion">
+    			<div class="promotion-container">
+	    			<p>FREE SHIPPING WORLDWIDE</p>
+	    			<span><ion-icon name="cart-outline"></ion-icon></span>
+	    		</div>
+	    		<div class="promotion-container">
+	    			<p>GIVEAWAY EVERYWEEK</p>
+	    			<span><ion-icon name="gift-outline"></ion-icon></span>
+                </div>
+	    		<div class="promotion-container">
+	    			<p>SALE UP TO 70% OFF ON TUESDAY</p>
+	    			<span><ion-icon name="diamond-outline"></ion-icon></span>                   
+	    		</div>
+    		</div>
+    	</section>
+
+    	<section class="section">
+    		<div class="section-content">
+    			<h3 class="section-content-title">TRENDY CLOTHING</h3>
+    			<p class="section-content-text">Trending</p>
+    		</div>
+            <div class="categorie-product">
+                <ul class="categorie-product-list">
+                    <li class="categorie-product-item">
+                        <a href="" class="categorie-product-link">FEATURES</a>
+                    </li>
+                    <li class="categorie-product-item">
+                        <a href="" class="categorie-product-link">MEN STYLE</a>
+                    </li>
+                    <li class="categorie-product-item">
+                        <a href="" class="categorie-product-link">WOMEN STYLE</a>
+                    </li>
+                    <li class="categorie-product-item">
+                        <a href="" class="categorie-product-link">KID STYLE</a>
+                    </li>
+                </ul>
+            </div>
+    		<div class="product-container">
+                <div class="products swiper-wrapper">
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    	</section>
+        <!-- section infomation -->
+    	<section class="section">
+    		<div class="infomation">
+    			<div class="infomation-content">
+    				<h3>ZORKA FASHION STORE</h3>
+    			</div>
+    			<div class="infomation-content-sale">
+    				<div class="infomation-sale">
+    					<div class="infomation-sale-icon"><ion-icon name="flash-outline"></ion-icon></div>
+    					<div class="infomation-sale-content">
+    						<h3>50% OFF</h3>
+    						<p>EVERY TUESDAY</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+        <!-- section sale off -->
+    	<section class="section">
+    		<div class="section-content">
+    			<h3 class="section-content-title">SALE OFF</h3>
+    			<p class="section-content-text">Up to 50%</p>
+    		</div>
+    		<div class="product-container">
+                <div class="products swiper-wrapper">
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-dropdown swiper-slide">
+                        <div class="product-image">
+                            <img src="https://nouthemes.net/html/zorka/assets/images/big-product-1.jpg">
+                            <div class="product-image-hover">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/product-img-4-thumb.jpg">
+                                <span></span>
+                            </div>
+                            <div class="product-image-search"><ion-icon name="search"></ion-icon></div>
+                        </div>                    
+                        <h3 class="product-name">ANIMAL PRINT COAT</h3>
+                        <p class="price">100.99 USD</p>
+                        <div class="menu-item-dropdown-content">
+                            <button class="add-cart">ADD TO CART</button>
+                            <div class="action">
+                                <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+                                <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    	</section>
+
+    	<section class="section section-categori">
+    		<div class="categories">
+    			<!-- 1 -->
+    			<div class="categori">
+    				<h3 class="categori-title">NEW-IN</h3>
+    				<div class="categori-products">
+    					<div class="categori-product">
+    						<div class="categori-product-img product-image">
+                                <img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-1.jpg">
+                                <div class="product-image-hover">
+                                    <img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-1.jpg">
+                                    <span></span>
+                                </div>
+                            </div>
+    						<div class="categori-product-content">
+    							<h3 class="product-name">PARKA WITH FAUX FUR HOOD</h3>
+			                    <p class="price">100.99 USD</p>
+    							<div class="action">
+    								<span class="cart"><ion-icon name="cart-outline"></ion-icon></span>
+		                            <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+		                            <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+		                        </div>
+    						</div>
+    					</div>
+    					<div class="categori-product">
+    						<div class="categori-product-img product-image">
+    							<img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-2.jpg">
+                                <div class="product-image-hover">
+                                    <img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-2.jpg">
+                                    <span></span>
+                                </div>
+                            </div>
+    						<div class="categori-product-content">
+    							<h3 class="product-name">PARKA WITH FAUX FUR HOOD</h3>
+			                    <p class="price">100.99 USD</p>
+    							<div class="action">
+    								<span class="cart"><ion-icon name="cart-outline"></ion-icon></span>
+		                            <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+		                            <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+		                        </div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<!-- 2 -->
+    			<div class="categori">
+    				<h3 class="categori-title">FEATURED</h3>
+    				<div class="categori-products">
+    					<div class="categori-product">
+                            <div class="categori-product-img product-image">
+    							<img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-3.jpg">
+                                <div class="product-image-hover">
+                                    <img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-3.jpg">
+                                    <span></span>
+                                </div>
+                            </div>    						
+                            <div class="categori-product-content">
+    							<h3 class="product-name">PARKA WITH FAUX FUR HOOD</h3>
+			                    <p class="price">100.99 USD</p>
+    							<div class="action">
+    								<span class="cart"><ion-icon name="cart-outline"></ion-icon></span>
+		                            <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+		                            <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+		                        </div>
+    						</div>
+    					</div>
+    					<div class="categori-product">
+                            <div class="categori-product-img product-image">
+    							<img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-1.jpg">
+                                <div class="product-image-hover">
+                                    <img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-1.jpg">
+                                    <span></span>
+                                </div>
+                            </div>    						
+                            <div class="categori-product-content">
+    							<h3 class="product-name">PARKA WITH FAUX FUR HOOD</h3>
+			                    <p class="price">100.99 USD</p>
+    							<div class="action">
+    								<span class="cart"><ion-icon name="cart-outline"></ion-icon></span>
+		                            <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+		                            <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+		                        </div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<!-- 3 -->
+    			<div class="categori">
+    				<h3 class="categori-title">TOP RATED</h3>
+    				<div class="categori-products">
+    					<div class="categori-product">
+                            <div class="categori-product-img product-image">
+    							<img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-2.jpg">
+                                <div class="product-image-hover">
+                                    <img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-2.jpg">
+                                    <span></span>
+                                </div>
+                            </div>    						
+                            <div class="categori-product-content">
+    							<h3 class="product-name">PARKA WITH FAUX FUR HOOD</h3>
+			                    <p class="price">100.99 USD</p>
+    							<div class="action">
+    								<span class="cart"><ion-icon name="cart-outline"></ion-icon></span>
+		                            <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+		                            <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+		                        </div>
+    						</div>
+    					</div>
+    					<div class="categori-product">
+                            <div class="categori-product-img product-image">
+    							<img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-3.jpg">
+                                <div class="product-image-hover">
+                                    <img src="https://nouthemes.net/html/zorka/assets/images/new-in-img-3.jpg">
+                                    <span></span>
+                                </div>
+                            </div>    						
+                            <div class="categori-product-content">
+    							<h3 class="product-name">PARKA WITH FAUX FUR HOOD</h3>
+			                    <p class="price">100.99 USD</p>
+    							<div class="action">
+    								<span class="cart"><ion-icon name="cart-outline"></ion-icon></span>
+		                            <span class="repeat"><ion-icon name="repeat-outline"></ion-icon></span>
+		                            <span class="heart"><ion-icon name="heart-outline"></ion-icon></span>
+		                        </div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+
+    	<section class="section">
+    		<div class="section-content">
+    			<h3 class="section-content-title">BLOG UPDATES</h3>
+    			<p class="section-content-text">Our stories</p>
+    		</div>
+    		<div class="blogs">
+    			<div class="blog">
+    				<img src="https://nouthemes.net/html/zorka/assets/images/blog-img-1.jpg">
+    				<div class="blog-content">
+    					<h3 class="blog-title">MIX & MATCH WEEKEND</h3>
+    					<p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tincidunt eros ...</p>
+    					<a href="">READ MORE</a>
+    				</div>
+    			</div>
+    			<div class="blog">
+    				<img src="https://nouthemes.net/html/zorka/assets/images/blog-img-2.jpg">
+    				<div class="blog-content">
+    					<h3 class="blog-title">FOR YOUR INSPIRATION</h3>
+    					<p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tincidunt eros ...</p>
+    					<a href="">READ MORE</a>
+    				</div>
+    			</div>
+    			<div class="blog">
+    				<img src="https://nouthemes.net/html/zorka/assets/images/blog-img-3.jpg">
+    				<div class="blog-content">
+    					<h3 class="blog-title">LONDON FASHION WEEK 2015</h3>
+    					<p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tincidunt eros ...</p>
+    					<a href="">READ MORE</a>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+
+    	<section class="section section-subscribe">
+    		<div class="subscribe">
+    			<div class="subscribe-icon">
+    				<ion-icon name="mail-outline"></ion-icon>
+    			</div>
+    			<div class="subscribe-content">
+    				<h3 class="subscribe-title">SUBSCRIBE</h3>
+    				<p class="subscribe-text">Get the latest news & updates from Zorka</p>
+    			</div>
+    			<div class="subscribe-form">
+    				<input type="mail" placeholder="YOUR EMAIL ADDRESS" name="">
+    				<button>SUBSCRIBE</button>
+    			</div>
+    		</div>
+    	</section>
+
+        <!-- company -->
+        <section class="section">
+            <div class="company swiper">
+                <div class="company-container swiper-wrapper">
+                    <div class="company-item swiper-slide">
+                        <img src="https://nouthemes.net/html/zorka/assets/images/zara.png" alt="">
+                    </div>
+                    <div class="company-item swiper-slide">
+                        <img src="https://nouthemes.net/html/zorka/assets/images/hm.png" alt="">
+                    </div>
+                    <div class="company-item swiper-slide">
+                        <img src="https://nouthemes.net/html/zorka/assets/images/bershka.png" alt="">
+                    </div>
+                    <div class="company-item swiper-slide">
+                        <img src="https://nouthemes.net/html/zorka/assets/images/pull-bear.png" alt="">
+                    </div>
+                    <div class="company-item swiper-slide">
+                        <img src="https://nouthemes.net/html/zorka/assets/images/mango.png" alt="">
+                    </div>
+                    <div class="company-item swiper-slide">
+                        <img src="https://nouthemes.net/html/zorka/assets/images/zara.png" alt="">
+                    </div>
+                    <div class="company-item swiper-slide">
+                        <img src="https://nouthemes.net/html/zorka/assets/images/zara.png" alt="">
+                    </div>
+                    <div class="company-item swiper-slide">
+                        <img src="https://nouthemes.net/html/zorka/assets/images/mango.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+    	<section class="section">
+    		<div class="infomation2">
+    			<div class="infomation2-item">
+    				<div class="infomation2-icon"><ion-icon name="alarm-outline"></ion-icon></div>
+    				<div class="infomation2-content">
+    					<h3>OPENING ALL WEEK</h3>
+    					<p>8AM : 8PM</p>
+    				</div>
+    			</div>
+    			<div class="infomation2-item">
+    				<div class="infomation2-icon"><ion-icon name="medal-outline"></ion-icon></div>
+    				<div class="infomation2-content">
+    					<h3>25% OFF WOMEN T-SHIRT</h3>
+    					<p>On order over 500USD</p>
+    				</div>
+    			</div>
+    			<div class="infomation2-item">
+    				<div class="infomation2-icon"><ion-icon name="planet-outline"></ion-icon></div>
+    				<div class="infomation2-content">
+    					<h3>FREE SHIP ALL ORDER</h3>
+    					<p>Worldwide shipping</p>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    </div>
+</div>
+
+<!-- footer -->
+<footer class="section-footer-top" id="footer">
+    <div class="wraper">
+        <div class="section setion-footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3">
+                    <h3 class="footer-title">LOCATION</h3>
+                    <p class="footer-address">580, BROADWAY, 10012 - NEW YORK NY - U</p>
+                    <p class="footer-phone">Tel. +1 2123431725</p>
+                    <p class="footer-mail">Email. info@thememove.com</p>
+                    <ul class="list-social footer-social">
+                        <li><a href="#" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#" class="vk"><ion-icon name="logo-vk"></ion-icon></a></li>
+                        <li><a href="#" class="behance"><ion-icon name="logo-behance"></ion-icon></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3">
+                    <h3 class="footer-title">LOCATION</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-link">HOW TO BUY</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">GENERAL INFORMATION</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">PAYMENT</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">SHIPPING</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">RETURNS</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">EXCHANGES</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">GIFT CARD</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">MY ACCOUNT</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">WATCHES</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3">
+                    <h3 class="footer-title">POLICIES</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-link">ENVIRONMENTAL POLICY</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">ANIMAL WELFARE</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">PRIVACY POLICY</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">PURCHASE CONDITIONS</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">GIFT CARD CONDITIONS</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">WARRANTY ON WATCHES</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3">
+                    <h3 class="footer-title">COMPANY</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-link">ABOUT US</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">OFFICES</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">STORES</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">WORK WITH US</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-24 col-sm-24 col-md-24">
+                    <div class="footer-copyright">
+                        <p>©COPYRIGHT 2015.THEME MADE BY THEMEMOVE</p>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!--  -->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!--  -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- main -->
+<script src="./main.js"></script>
+</html>

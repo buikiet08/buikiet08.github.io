@@ -1,0 +1,109 @@
+@media  screen and (max-width:1023px)  {
+    .promotion,
+    .infomation,
+    .categories,
+    .blogs,
+    .infomation2{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:30px;
+    }
+    .section,
+    .k-container{
+        width: 100vw;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .bar-menu{
+        display: block;
+    }
+    .header-social{
+        display: none;
+    }
+    .topbar{
+        display: none;
+    }
+    header .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background-color: #fff;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        z-index: 999;
+        margin: 0;
+        float: left;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+        transition: all 0.4s linear;
+    }
+    .menu.activemenu{
+        left: 0;
+    }
+    .checbox:checked ~ .menu{
+        left: 100%;
+    }
+    .btn-close-menu:checked .menu{
+        left: -100%;
+    }
+    .menu-list{
+        flex-direction: column;
+    }
+    .menu-item .menu-list-dropdown{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 240px;
+    }
+    .search-form{
+        width: 100%;
+        background-color: #d3d3d3;
+    }
+    .search-form input{
+        display: flex;
+    }
+    .menu-item{
+        padding-bottom: 20px;
+    }
+    .btn-close-menu{
+        display: flex;
+        position: absolute;
+        top:20px;
+        right: 20px;
+    }
+    .btn-close-menu ion-icon{
+        font-size: 40px;
+        cursor: pointer;
+    }
+    /* banner */
+    .banner-name{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .banner-title{
+        margin-bottom:
+        10px;
+        margin-top: 0;
+        font-size: 30px;
+    }
+}
+@media  screen and (max-width:739px)  {
+    .promotion,
+    .infomation,
+    .categories,
+    .blogs,
+    .infomation2{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:30px;
+        
+    }
+    
+    .section,
+    .k-container{
+        width: 100vw;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
