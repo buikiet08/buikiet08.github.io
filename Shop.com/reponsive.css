@@ -19,17 +19,33 @@ body{
         padding-left: 30px;
         padding-right: 30px;
     }
+    .header-top{
+        transition: all 0.2s linear;
+    }
+    .header-top.activemobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 4px 0 8px rgba(0,0,0,0.4);
+        z-index: 100;
+        background-color: #fff;
+        height: 80px;
+    }
     .bar-menu{
         display: block;
     }
     .header-social{
         display: none;
     }
-    .topbar{
-        display: none;
+    .topbar .k-container{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        padding-top: 10px;
     }
     header .menu{
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -48,6 +64,7 @@ body{
     
     .menu.activemenu{
         left: 0;
+        display: flex;
     }
     .menu-list{
         flex-direction: column;
