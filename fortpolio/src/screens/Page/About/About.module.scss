@@ -1,0 +1,127 @@
+.about{
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding: 100px 0;
+    .about_image{
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+        margin-bottom: 48px;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            box-shadow: 0 0 20px rgb(0 0 0 / 12%);
+        }
+    }
+    .description{
+        width: 100%;
+        height: auto;
+        clear: both;
+        .name{
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 26px;
+            color: var(--black-2);
+        }
+        .description_inner{
+            width: 100%;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            .left{
+                width: 55%;
+                padding-right: 50px;
+                & p{
+                    margin-bottom: 35px;
+                    font-style: italic;
+                    font-size: 15px;
+                    letter-spacing: 0.5px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    color: var(--gray);
+                }
+            }
+            .right{
+                width: 45%;
+                padding-left: 50px;
+                ul li{
+                    margin: 0;
+                    width: 100%;
+                    float: left;
+                    p{
+                        span{
+                            min-width: 90px;
+                            display: inline-block;
+                            font-weight: 600;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// reposive
+$res_768 : "only screen and (max-width: 768px)";
+$res_1024 : "only screen and (max-width: 1024px)";
+$res_1200 : "only screen and (max-width: 1200px)";
+
+@mixin responsive_768() {
+    @media #{$res_768} {
+        @content;
+    }
+}
+
+@mixin responsive_1024() {
+    @media #{$res_1024} {
+        @content;
+    }
+}
+@mixin responsive_1200() {
+    @media #{$res_1200} {
+        @content;
+    }
+}
+
+
+@include responsive_1200{
+    .about{
+        padding-top: 140px;
+        padding-bottom: 100px;
+    }
+}
+
+@include responsive_1024{
+    .about{
+        .description{
+            .description_inner{
+                flex-direction: column;
+                .left,.right{
+                    width: 100%;
+                    padding:0
+                }
+                .right{
+                    padding-top: 40px;
+                }
+                
+            }
+        }
+    }
+}
+
+ 
+@include responsive_768{
+    .about{
+        padding-top:100px;
+        .about_image{
+            margin-bottom:10px;
+        }
+    }
+    
+}
+

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400&family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary-light: #8abdff;
+    --primary: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    
+    --white: #FFFFFF;
+    --white-2:#f8f8f8;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+
+    --black:#000000;
+    --black-2:#222222;
+
+    --gray:#767676;
+  }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px    100% = 16px
+    overflow-y: scroll;
+    background: var(--greyLight-1);
+
+    @media screen and (min-width: 900px) {
+            font-size: 75%; }
+}
+body{
+    font-family: "Mulish";
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: .5px;
+    word-wrap: break-word;
+    font-weight: 500;
+    background-color: #fff;
+    color: #767676;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #767676;
+}
+h3 {
+    font-size: 30px;
+    line-height:1.2;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+input,textarea{
+    border-radius: 0;
+    font-size: 13px;
+    min-width: auto;
+    letter-spacing: 1.4px;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    line-height: 1.6;
+    padding: 10px 15px!important;
+    height: 44px;
+    vertical-align: middle;
+    border: 1px solid #eee;
+    transition: all .3s ease;
+}
+input:focus,textarea:focus{
+    border: none;
+    outline: none;
+}

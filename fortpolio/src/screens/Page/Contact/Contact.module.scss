@@ -1,0 +1,107 @@
+.contact{
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    .wrapper{
+        margin-top: 62px;
+        .map_wrapper{
+            height: 400px;
+            width: 100%;
+            height: auto;
+            clear: both;
+            float: left;
+            margin-bottom: 50px;
+            .map{
+                width: 100%;
+                height: 400px;
+                border: none;
+                box-shadow: none;
+            }
+        }
+
+        .fields{
+            width: 100%;
+            height: auto;
+            clear: both;
+            float: left;
+            .contact_form{
+                .first{
+                    width: 100%;
+                    float: left;
+                    ul{
+                        li{
+                            width: 100%;
+                            margin: 0 0 30px;
+                            float: left;
+                            input{
+                                width: 100%;
+                                border: 1px solid rgba(0,0,0,.2);
+                                background-color: transparent;
+                                font-style: italic;
+                            }
+                            textarea{
+                                width: 100%;
+                                border: 1px solid rgba(0,0,0,.2);
+                                height: 120px;
+                                resize: none;
+                                background-color: transparent;
+                            }
+                            .errors{
+                                padding-top: 4px;
+                                p{
+                                    color: #f52225;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// reposive
+$res_768 : "only screen and (max-width: 768px)";
+$res_1200 : "only screen and (max-width: 1200px)";
+
+
+@mixin responsive_768() {
+    @media #{$res_768} {
+        @content;
+    }
+}
+
+@mixin responsive_1200() {
+    @media #{$res_1200} {
+        @content;
+    }
+}
+
+
+@include responsive_1200{
+    .contact{
+        padding-top: 140px;
+        padding-bottom:100px;
+    }
+}
+
+ 
+@include responsive_768{
+    .contact{
+        padding-top:100px;
+        .wrapper{
+            margin-top:40px;
+            .map_wrapper{
+                height:300px;
+                overflow: hidden;
+            }
+        }
+    }
+    
+}
